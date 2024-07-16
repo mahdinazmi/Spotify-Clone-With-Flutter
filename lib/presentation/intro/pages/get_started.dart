@@ -22,16 +22,20 @@ class GetStartedPage extends StatelessWidget {
             decoration: const BoxDecoration(
               image: DecorationImage(
                 fit: BoxFit.fill,
+                //ColorFilter is also a good option to use rather adding another item into stack ?
+                colorFilter:
+                        ColorFilter.mode(Colors.black38, BlendMode.darken)
                 image: AssetImage(
                   AppImages.introBG,
+                   
                 )
               )
             ),
           ),
 
-          Container(
-            color: Colors.black.withOpacity(0.15),
-          ),
+          // Container(
+          //   color: Colors.black.withOpacity(0.15),
+          // ),
 
           Padding(
             padding: const EdgeInsets.symmetric(
